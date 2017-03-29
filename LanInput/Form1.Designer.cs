@@ -32,6 +32,9 @@
             this.BTN_OPEN_URL = new System.Windows.Forms.Button();
             this.BTN_GET_STR = new System.Windows.Forms.Button();
             this.webb = new System.Windows.Forms.WebBrowser();
+            this.BTN_In_Lib = new System.Windows.Forms.Button();
+            this.BTN_GET_RETURE = new System.Windows.Forms.Button();
+            this.textBoxGetReturn = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox_URL_Show
@@ -60,6 +63,7 @@
             this.BTN_GET_STR.TabIndex = 2;
             this.BTN_GET_STR.Text = "获取字符";
             this.BTN_GET_STR.UseVisualStyleBackColor = true;
+            this.BTN_GET_STR.Click += new System.EventHandler(this.BTN_GET_STR_Click);
             // 
             // webb
             // 
@@ -72,11 +76,41 @@
             this.webb.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webb_Navigated);
             this.webb.NewWindow += new System.ComponentModel.CancelEventHandler(this.webb_NewWindow);
             // 
+            // BTN_In_Lib
+            // 
+            this.BTN_In_Lib.Location = new System.Drawing.Point(1076, 13);
+            this.BTN_In_Lib.Name = "BTN_In_Lib";
+            this.BTN_In_Lib.Size = new System.Drawing.Size(75, 23);
+            this.BTN_In_Lib.TabIndex = 4;
+            this.BTN_In_Lib.Text = "入库";
+            this.BTN_In_Lib.UseVisualStyleBackColor = true;
+            this.BTN_In_Lib.Click += new System.EventHandler(this.BTN_In_Lib_Click);
+            // 
+            // BTN_GET_RETURE
+            // 
+            this.BTN_GET_RETURE.Location = new System.Drawing.Point(195, 53);
+            this.BTN_GET_RETURE.Name = "BTN_GET_RETURE";
+            this.BTN_GET_RETURE.Size = new System.Drawing.Size(75, 23);
+            this.BTN_GET_RETURE.TabIndex = 5;
+            this.BTN_GET_RETURE.Text = "返回结果";
+            this.BTN_GET_RETURE.UseVisualStyleBackColor = true;
+            this.BTN_GET_RETURE.Click += new System.EventHandler(this.BTN_GET_RETURE_Click);
+            // 
+            // textBoxGetReturn
+            // 
+            this.textBoxGetReturn.Location = new System.Drawing.Point(319, 53);
+            this.textBoxGetReturn.Name = "textBoxGetReturn";
+            this.textBoxGetReturn.Size = new System.Drawing.Size(534, 21);
+            this.textBoxGetReturn.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 653);
+            this.Controls.Add(this.textBoxGetReturn);
+            this.Controls.Add(this.BTN_GET_RETURE);
+            this.Controls.Add(this.BTN_In_Lib);
             this.Controls.Add(this.webb);
             this.Controls.Add(this.BTN_GET_STR);
             this.Controls.Add(this.BTN_OPEN_URL);
@@ -95,6 +129,9 @@
         private System.Windows.Forms.Button BTN_OPEN_URL;
         private System.Windows.Forms.Button BTN_GET_STR;
         private System.Windows.Forms.WebBrowser webb;
+        private System.Windows.Forms.Button BTN_In_Lib;
+        private System.Windows.Forms.Button BTN_GET_RETURE;
+        private System.Windows.Forms.TextBox textBoxGetReturn;
     }
 }
 
